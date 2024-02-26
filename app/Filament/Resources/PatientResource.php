@@ -34,6 +34,8 @@ class PatientResource extends Resource
                     ->maxDate(now()),
                 Forms\Components\Select::make('owner_id')
                     ->relationship('owner', 'name')
+                    ->searchable()
+                    ->preload()
                     ->required(),
             ]);
     }
