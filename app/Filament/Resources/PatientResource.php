@@ -28,7 +28,7 @@ class PatientResource extends Resource
                         'cat' => 'Cat',
                         'dog' => 'Dog',
                         'rabbit' => 'Rabbit',
-                ]),
+                ])->required(),
             ]);
     }
 
