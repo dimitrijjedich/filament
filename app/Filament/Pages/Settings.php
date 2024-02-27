@@ -12,11 +12,14 @@ class Settings extends Page
 
     protected static string $view = 'filament.pages.settings';
 
+    // check if the page should be displayed in the sidebar
+    // example for usage: return auth()->user()->canManageSettings();
     public static function canAccess(): bool
     {
         return true;
     }
 
+    // returns an array of widgets to display above the page content
     protected function getHeaderWidgets(): array
     {
         return [
@@ -24,6 +27,7 @@ class Settings extends Page
         ];
     }
 
+    // returns an array of widgets to display below the page content
     protected function getFooterWidgets(): array
     {
         return [
