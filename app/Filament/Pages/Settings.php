@@ -13,6 +13,9 @@ class Settings extends Page
     protected static string $view = 'filament.pages.settings';
 
     protected static ?string $slug = 'custom-url-slug';
+
+    protected ?string $heading = 'Custom Page Heading';
+
     // check if the page should be displayed in the sidebar
     // example for usage: return auth()->user()->canManageSettings();
     public static function canAccess(): bool
