@@ -21,6 +21,12 @@ class Settings extends Page
     {
         return [
             PatientTypeOverview::class,
+        ];
+    }
+
+    protected function getFooterWidgets(): array
+    {
+        return [
             TreatmentsChart::class,
         ];
     }
