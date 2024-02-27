@@ -16,6 +16,8 @@ class Settings extends Page
 
     protected ?string $heading = 'Custom Page Heading';
 
+    protected ?string $subheading = 'Custom Page Subheading';
+
     // check if the page should be displayed in the sidebar
     // example for usage: return auth()->user()->canManageSettings();
     public static function canAccess(): bool
