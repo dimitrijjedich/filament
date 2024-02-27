@@ -5,6 +5,7 @@ namespace App\Filament\Pages;
 use App\Filament\Widgets\PatientTypeOverview;
 use App\Filament\Widgets\TreatmentsChart;
 use Filament\Pages\Page;
+use Illuminate\Contracts\View\View;
 
 class Settings extends Page
 {
@@ -23,6 +24,11 @@ class Settings extends Page
     public static function canAccess(): bool
     {
         return true;
+    }
+
+    public function getHeader(): ?View
+    {
+        return view('custom-header');
     }
 
     // returns an array of widgets to display above the page content
