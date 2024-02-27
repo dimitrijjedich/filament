@@ -10,6 +10,7 @@ use Flowframe\Trend\TrendValue;
 class TreatmentsChart extends ChartWidget
 {
     protected static ?string $heading = 'Chart';
+    protected int | string | array $columnSpan = 'full';
 
     protected function getData(): array
     {
