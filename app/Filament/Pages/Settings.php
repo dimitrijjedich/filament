@@ -4,7 +4,6 @@ namespace App\Filament\Pages;
 
 use App\Filament\Widgets\PatientTypeOverview;
 use App\Filament\Widgets\TreatmentsChart;
-use Filament\Actions\Action;
 use Filament\Pages\Page;
 
 class Settings extends Page
