@@ -2,6 +2,8 @@
 
 namespace App\Filament\Pages;
 
+use App\Filament\Widgets\PatientTypeOverview;
+use App\Filament\Widgets\TreatmentsChart;
 use Filament\Actions\Action;
 use Filament\Pages\Page;
 
@@ -14,5 +16,13 @@ class Settings extends Page
     public static function canAccess(): bool
     {
         return true;
+    }
+
+    protected function getHeaderWidgets(): array
+    {
+        return [
+            PatientTypeOverview::class,
+            TreatmentsChart::class,
+        ];
     }
 }
